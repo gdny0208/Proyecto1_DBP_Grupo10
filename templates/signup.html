@@ -1,0 +1,111 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+  content %}
+  <style>
+    h4{
+      text-align: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+      padding-top: 50px;
+      padding-bottom: 10px;
+
+    }
+    body{
+      background: rgba(0, 0, 0, 0.7) url('https://fondosmil.com/fondo/35732.jpg');
+      height: 100%;
+      background-position: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+    }
+    label{
+      color: black;
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 15px;
+    }
+    .form-group{
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+
+  .form-group input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .form-group label{
+    padding-left: 10px;
+    color: #4f4b4b;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  } 
+    
+    button{
+      width: 30%;
+      height: 50px;
+      border: 1px solid;
+      background: #4f4b4b;
+      border-radius: 25px;
+      font-size: 18px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      outline: none;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  </style>
+  <form method="POST">
+    <h4 align="center">Sign Up</h4>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="Enter Email"
+      />
+      <label for="username">Username</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        class="form-control"
+        placeholder="Enter Username"
+      />
+      <label for="password1">Contraseña</label>
+      <input
+        type="password"
+        id="password1"
+        name="password1"
+        class="form-control"
+        placeholder="Enter Password"
+      />
+      <label for="password2">Password Again</label>
+      <input
+        type="password"
+        id="password2"
+        name="password2"
+        class="form-control"
+        placeholder="Enter Password Again"
+      />
+      <br />
+      <div align="center">
+        <button type="submit">Sign Up</button>
+      </div>
+    </div>
+  </form>
+  {% endblock %}
