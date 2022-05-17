@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+  %}
+  <style>
+    
+    body{
+      background: rgba(0, 0, 0, 0.7) url('https://wallpaperstock.net/libro-de-recetas-wallpapers_53636_1920x1200.jpg');
+      height: 100%;
+      background-position: auto;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+    }
+    h3{
+      text-align: center;
+      color: white;
+      font-size: 3em;
+      font-weight: bold;
+      padding-top: 80px;
+    }
+    label{
+      color: black;
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 15px;
+    }
+    .form-group{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    }
+
+  .form-group input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .form-group label{
+    padding-left: 10px;
+    color: #4f4b4b;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  button{
+    width: 30%;
+    height: 50px;
+    border: 1px solid;
+    background: #343a40;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    }
+    
+  </style>
+  <form method="POST">
+    <h3 align="center">Login</h3>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="Enter Email"
+      />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        placeholder="Enter Password"
+      />
+      <br />
+      <div align="center">
+        <button type="submit">Login</button>
+      </div>
+    </div>
+  </form>
+  {% endblock %}
