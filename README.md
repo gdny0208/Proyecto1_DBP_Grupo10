@@ -73,7 +73,8 @@ El app se encuentra en el localhost de la computadora en el puerto predeterminad
 Forma de autenticación:
  
 – Manejo de errores HTTP:
-   500 : Errores en el Servidor. Esto lo manejamos con un if y else, lo que ocurre que si falla algo marca un error y se redirecciona a otra página donde le llega un mensaje del fallo con un flash.
+   
+   (500) : Errores en el Servidor. Esto lo manejamos con un if y else, lo que ocurre que si falla algo marca un error y se redirecciona a otra página donde le llega un mensaje del fallo con un flash.
  
    (400) : Errores en el Cliente: esto lo mantenemos con login_required para que no entre a paginas que no puede
  
